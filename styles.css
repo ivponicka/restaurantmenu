@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap');
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  margin: 20px;
+  line-height: 1.5rem;
+font-family: 'Dongle', sans-serif;
+}
+
+img:not(.logo) {
+  width: 100%;
+}
+
+img {
+  display: block;
+}
+
+.logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+.underline {
+  width: 20rem;
+  height: 0.3rem;
+  background: grey;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+
+/*-----menu------*/
+
+.section-center {
+  widht: 95wv;
+  margin: 50px auto;
+  max-width: 1200px;
+  display: grid;
+  gap: 3rem 2.5rem;
+
+}
+
+.menu-item {
+  display: grid;
+  gap: 1rem 2rem;
+  max-width: 30rem;
+}
+
+.photo {
+  object-fit: cover;
+  height: 200px;
+  border: 0.3rem solid grey;
+  border-radius: 5px;
+}
+
+.item-info header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid grey;
+margin-bottom: 10px;
+}
+
+
+
+
+.item-info h4 {
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 5.25rem;
+  }
+  h2 {
+    font-size: 3.75rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+  }
+  body {
+    font-size: 2rem;
+  }
+
+
+.price {
+   color: grey;
+}
+
+/*-----filter-button------*/
+
+.buttons-container {
+display: flex;
+justify-content: center;
+}
+
+.filter-button {
+padding: 3px 20px;
+margin: 0.5rem;
+font-family: 'Dongle', sans-serif;
+font-size: 2rem;
+
+}
+
+button {
+border: 3px solid grey;
+border-radius: 10px;
+cursor: pointer;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.filter-button:hover {
+background: grey;
+color: white;
+}
+
+/*-----media------*/
+
+@media screen and (min-width: 768px) {
+  .menu-item {
+    grid-template-columns: 225px 1fr;
+    gap: 0 1.25rem;
+    max-width: 40rem;
+  }
+  .photo {
+    height: 175px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-center {
+    width: 95vw;
+    grid-template-columns: 1fr 1fr;
+  }
+  .photo {
+    height: 150px;
+  }
+}
